@@ -12,7 +12,7 @@ options = Options()
 options.add_argument("start-maximized")
 options.add_argument("--disable-notifications")
 
-chrome = webdriver.Chrome('./chromedriver', chrome_options=options)
+chrome = webdriver.Chrome('./chromedriver', options=options)
 chrome.get("https://www.mangot5.com/Index/Billing/History?cPage=1")
 
 #Wait for login
