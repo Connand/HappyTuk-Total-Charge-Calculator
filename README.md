@@ -5,5 +5,5 @@
 # Known Bug
 如果儲值紀錄只有一頁時，結果可能輸出0元
 # 注意
-若有無法開啟的狀況，可能需要更新chromedriver檔案
+若有無法開啟的狀況，可能需要更新chromedriver.exe  
 https://chromedriver.chromium.org/
