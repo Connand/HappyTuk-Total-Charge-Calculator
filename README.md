@@ -7,3 +7,6 @@
 # 注意
 若有無法開啟的狀況，可能需要更新chromedriver.exe  
 https://chromedriver.chromium.org/
+# 圖片
+若網頁介面跟下圖不同，此程式可能無法使用  
+![0](https://i.imgur.com/GWAzQ59.png)
