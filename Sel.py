@@ -7,12 +7,22 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 
+import os
+try:
+    os.mkdir("chromedrivers")
+except:
+    pass
+
+import chromedriver_autoinstaller
+path = chromedriver_autoinstaller.install(path = "./chromedrivers")  # Check if the current version of chromedriver exists
+                                      # and if it doesn't exist, download it automatically,
+                                      # then add chromedriver to path
 
 options = Options()
 options.add_argument("start-maximized")
 options.add_argument("--disable-notifications")
 
-chrome = webdriver.Chrome('./chromedriver', options=options)
+chrome = webdriver.Chrome(path, options=options)
 chrome.get("https://www.mangot5.com/Index/Billing/History?cPage=1")
 
 #Wait for login
